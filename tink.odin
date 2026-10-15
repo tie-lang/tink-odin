@@ -1,7 +1,7 @@
 // tink.odin —— tink data-flow node frame protocol (universal, language-agnostic).
 //
 // Frame = [len u32 BE][payload][crc u32 BE]; crc = CRC32-IEEE (0xEDB88320).
-// Mirrors std/tink.tie (tie standard library) and the other-language tink
+// Mirrors ext/tink.tie (tie standard library) and the other-language tink
 // libraries; pure procedures over []byte, IO (stdin/stdout) left to the
 // caller. Odin, stdlib-only, no dependencies.
 
